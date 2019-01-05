@@ -5,15 +5,16 @@
 	<title>Blog de David</title>
 </head>
 <body>
-	<h1>Bienvenido</h1>
-	<h2>Éste es el blog de David.</h2>
-	<p>No tiene muchas cosas aún,<br>pero lo carsa.</p>
-	<ul>
-		<li class="item1"></li>
-		<li class="item2"></li>
-		<li class="item3"></li>
-		<li class="item4"></li>
-		<li class="item5"></li>
-	</ul>
+	<div>
+		<h1>Bienvenido</h1>
+		<h2>Éste es el blog de David.</h2>
+		<div>
+			{% for post in posts %}
+				<h3><a href="">{{post.title}}</a></h3>
+				<p>Creado el: {{post.created_date}}</p>
+				<p>{{post.text|linebreaksbr}}</p>
+			{% endfor %}
+		</div>
+	</div>
 </body>
 </html>
