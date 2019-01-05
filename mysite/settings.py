@@ -25,7 +25,7 @@ SECRET_KEY = 'rgl(jb!tvlt+337h2kvs*9kgz-)gkb3y4=+9kjxlf%f+jh-gf_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'librantz7992.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'librantz792.pythonanywhere.com']
 
 
 # Application definition
